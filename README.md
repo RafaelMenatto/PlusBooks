@@ -1,4 +1,4 @@
-# AluraBooks - Aula 05
+# PlusBooks 
 
 Projeto de um site estático para uma livraria online fictícia, desenvolvido como parte do curso de HTML e CSS da [Alura](https://www.alura.com.br/).
 
