@@ -1,0 +1,277 @@
+.cabeçalho__menu-hamburguer {
+/* Estilo do ícone do menu hamburguer */
+    width: 24px;
+/* Define a largura do ícone do menu hamburguer */
+    height: 24px;
+/* Define a altura do ícone do menu hamburguer */
+    background-image: url("../img/Menu.svg");
+/* Define a imagem de fundo do ícone (menu fechado) */
+    background-repeat: no-repeat;
+/* Impede que a imagem de fundo se repita */
+    background-position: center;
+/* Centraliza a imagem de fundo dentro do elemento */
+    display: inline-block;
+/* Exibe o elemento como um bloco em linha */
+}
+
+.container__botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer {
+/* Quando o checkbox está marcado, seleciona o ícone dentro do label */
+    background-image: url("../img/Menu Aberto.svg");
+/* Troca a imagem do ícone para o menu aberto */
+}
+
+.container__rotulo:hover {
+/* Estilo do label do menu quando o mouse passa por cima */
+    background: var(--azul-degrade);
+/* Aplica o fundo azul gradiente quando o mouse passa por cima do botão do menu */
+}
+
+.container__rotulo:hover > .cabeçalho__menu-hamburguer {
+/* Quando o mouse passa por cima do label, seleciona o ícone do menu */
+    background-image: url("../img/Menu Aberto.svg");
+/* Troca a imagem do ícone do menu para o ícone de menu aberto no hover */
+}
+
+.container__botao:checked~.container__rotulo {
+/* Quando o checkbox está marcado, estiliza o label do menu */
+    background: var(--azul-degrade);
+/* Aplica o fundo azul gradiente no label quando o menu está aberto */
+}
+
+.cabeçalho {
+/* Estilo do cabeçalho principal */
+    background-color: var(--branco);
+/* Define a cor de fundo do cabeçalho como branco */
+    display: flex;
+/* Exibe o cabeçalho como um flex container */
+    justify-content: space-between;
+/* Alinha os itens do cabeçalho com espaço entre eles */
+    align-items: center;
+/* Alinha os itens verticalmente ao centro */
+    position: relative;
+/* Permite que elementos posicionados dentro do cabeçalho sejam posicionados relativamente a ele */
+}
+
+.container {
+/* Estilo do container que agrupa o menu e a logo */
+    display: flex;
+/* Exibe o container como um flex container */
+    align-items: center;
+/* Alinha os itens verticalmente ao centro */
+}
+
+.container__imagem {
+/* Estilo da imagem dentro do container */
+    padding: 1em;
+/* Adiciona espaçamento interno de 1em em todos os lados */
+}
+
+.lista-menu {
+/* Estilo da lista do menu hamburguer */
+    display: none;
+/* Esconde a lista do menu por padrão */
+    position: absolute;
+/* Posiciona a lista de forma absoluta em relação ao pai */
+    top: 100%;
+/* Posiciona a lista logo abaixo do elemento pai */
+    width: 60vw;
+/* Define a largura da lista como 60% da largura da viewport */
+}
+
+.container__botao:checked~.lista-menu {
+/* Quando o checkbox está marcado, mostra a lista do menu */
+    display: block;
+/* Exibe a lista do menu como um bloco */
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+/* Estilo do título e dos itens da lista do menu */
+    padding: 1em;
+/* Adiciona espaçamento interno de 1em em todos os lados */
+    background-color: var(--branco);
+/* Define a cor de fundo como branco */
+}
+
+.lista-menu__titulo {
+/* Estilo específico do título da lista do menu */
+    color: var(--laranja);
+/* Define a cor do texto como laranja */
+    font-weight: 700;
+/* Define a espessura da fonte como negrito (700) */
+}
+
+.lista-menu__link {
+/* Estilo dos links dentro da lista do menu */
+    background: var(--azul-degrade);
+/* Aplica um gradiente azul no fundo do texto */
+    -webkit-background-clip: text;
+/* Recorta o fundo gradiente para o texto (compatibilidade com WebKit) */
+    -webkit-text-fill-color: transparent;
+/* Torna o preenchimento do texto transparente para mostrar o gradiente */
+    background-clip: text;
+/* Recorta o fundo gradiente para o texto (padrão) */
+    text-transform: uppercase;
+/* Transforma o texto em maiúsculas */
+}
+
+.container__botao {
+/* Estilo do checkbox do menu (escondido) */
+    display: none;
+/* Esconde o checkbox do menu */
+}
+
+.container__titulo {
+/* Estilo do título do container */
+    display: none;
+/* Esconde o título do container por padrão */
+}
+
+.opções {
+/* Estilo das opções de navegação */
+    display: none;
+/* Esconde as opções de navegação por padrão */
+}
+
+.container__texto {
+/* Estilo do texto do container */
+    display: none;
+/* Esconde o texto do container por padrão */
+}
+
+@media screen and (min-width: 1024px) {
+/* Media query para telas com largura mínima de 1024px (desktop) */
+
+    .container__titulo,
+    .container__titulo--negrito {
+    /* Estilo do título e do título em negrito do container */
+        font-family: var(--fonte-secundario);
+    /* Define a fonte secundária para os títulos */
+        font-size: 30px;
+    /* Define o tamanho da fonte como 30px */
+    }
+
+    .container__titulo {
+    /* Estilo específico do título do container */
+        font-weight: 400;
+    /* Define a espessura da fonte como normal (400) */
+        display: block;
+    /* Exibe o título como um bloco */
+    }
+
+    .container__titulo--negrito {
+    /* Estilo do título em negrito do container */
+        font-weight: 700;
+    /* Define a espessura da fonte como negrito (700) */
+    }
+
+    .opções {
+    /* Estilo das opções de navegação */
+        display: flex;
+    /* Exibe as opções como um flex container */
+    }
+
+    .opções__item {
+    /* Estilo dos itens das opções de navegação */
+        padding: 0 1em;
+    /* Adiciona espaçamento interno horizontal de 1em e vertical de 0 */
+        text-transform: uppercase;
+    /* Transforma o texto em maiúsculas */
+    }
+
+    .opções__link {
+    /* Estilo dos links das opções de navegação */
+        text-decoration: none;
+    /* Remove a decoração do texto (sublinhado) */
+        color: var(--preto);
+    /* Define a cor do texto como preto */
+    }
+
+    .container__imagem-transparente {
+    /* Estilo da imagem transparente do container */
+        display: none;
+    /* Esconde a imagem transparente no desktop */
+    }
+
+    .cabeçalho__menu-hamburguer {
+    /* Estilo do ícone do menu hamburguer no desktop */
+        display: none;
+    /* Esconde o ícone do menu hamburguer no desktop */
+    }
+
+    .opções__botão:checked~.lista-menu {
+    /* Quando o checkbox das opções está marcado, mostra a lista do menu */
+        display: block;
+    /* Exibe a lista do menu como um bloco */
+        width: auto;
+    /* Define a largura como automática */
+    }
+
+    .opções__botão {
+    /* Estilo do checkbox das opções (escondido) */
+        display: none;
+    /* Esconde o checkbox das opções */
+    }
+
+    .opções__botão:checked~.opções__rotulo>.opções__item {
+    /* Quando o checkbox das opções está marcado, estiliza o item da opção */
+        background: var(--azul-degrade);
+    /* Aplica o fundo azul gradiente no item */
+        color: var(--branco);
+    /* Define a cor do texto como branco */
+    }
+
+    .opções__item {
+    /* Estilo dos itens das opções de navegação */
+        padding: 2em 1em;
+    /* Adiciona espaçamento interno de 2em verticalmente e 1em horizontalmente */
+    }
+
+    .lista-menu__item:hover {
+    /* Estilo dos itens da lista do menu quando o mouse passa por cima */
+        background: var(--azul-degrade);
+    /* Aplica o fundo azul gradiente no item quando hover */
+    }
+
+    .lista-menu__item:hover>.lista-menu__link {
+    /* Quando o mouse passa por cima do item da lista, estiliza o link dentro dele */
+        -webkit-text-fill-color: var(--branco);
+    /* Define a cor de preenchimento do texto como branco (compatibilidade com WebKit) */
+        text-decoration: none;
+    /* Remove a decoração do texto (sublinhado) */
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+/* Media query para telas com largura mínima de 1728px (desktop grande) */
+    .container__link {
+    /* Estilo do link do container */
+        display: flex;
+    /* Exibe o link como um flex container */
+        align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+        text-decoration: none;
+    /* Remove a decoração do texto (sublinhado) */
+        color: var(--preto);
+    /* Define a cor do texto como preto */
+    }
+
+    .cabeçalho {
+    /* Estilo do cabeçalho no desktop grande */
+        padding: 0 2em;
+    /* Adiciona espaçamento interno de 0 verticalmente e 2em horizontalmente */
+    }
+
+    .opções {
+    /* Estilo das opções de navegação no desktop grande */
+        margin-right: auto;
+    /* Alinha as opções à esquerda com margem automática à direita */
+    }
+
+    .container__texto {
+    /* Estilo do texto do container no desktop grande */
+        display: block;
+    /* Exibe o texto como um bloco */
+    }
+}

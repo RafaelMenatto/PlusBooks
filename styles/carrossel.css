@@ -1,0 +1,212 @@
+.carrossel__titulo {
+/* Estilo do título do carrossel */
+    color: var(--laranja);
+/* Define a cor do título como laranja */
+    background-color: var(--branco);
+/* Define a cor de fundo do título como branca */
+    text-align: center;
+/* Centraliza o texto dentro do título */
+    text-transform: uppercase;
+/* Transforma o texto em maiúsculas */
+    font-size: 18px;
+/* Define o tamanho da fonte como 18px */
+    font-weight: 700;
+/* Define a espessura da fonte como negrito (700) */
+    padding: 1em 0 0.5em 0;
+/* Adiciona espaçamento interno de 1em superior, 0 direito, 0.5em inferior e 0 esquerdo */
+}
+
+.swiper-slide img {
+/* Estilo das imagens dentro dos slides do carrossel */
+    width: 100%;
+/* Define a largura da imagem como 100% do pai */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+/* Estilo dos botões de navegação do carrossel (anterior e próximo) */
+    display: none;
+/* Esconde os botões de navegação por padrão */
+}
+
+.swiper-pagination {
+/* Estilo da paginação do carrossel */
+    position: initial;
+/* Define a posição como inicial (relativa ao fluxo normal) */
+    margin: .5em 0;
+/* Adiciona margem de 0.5em superior e inferior */
+}
+
+.card__descrição {
+/* Estilo da descrição do card */
+    display: flex;
+/* Exibe a descrição como um flex container */
+    justify-content: space-between;
+/* Distribui os itens com espaço entre eles */
+    margin-bottom: 0.5em;
+/* Adiciona margem inferior de 0.5em */
+}
+
+.card__botões {
+/* Estilo dos botões do card */
+    display: flex;
+/* Exibe os botões como um flex container */
+    justify-content: space-between;
+/* Distribui os botões com espaço entre eles */
+}
+
+.botões {
+/* Estilo do grupo de botões */
+    display: flex;
+/* Exibe os botões como um flex container */
+}
+
+.card {
+/* Estilo do card */
+    background: var(--branco);
+/* Aplica o gradiente branco no fundo do card */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+/* Adiciona uma sombra ao redor do card */
+    border-radius: 10px;
+/* Arredonda os cantos do card com 10px */
+    margin: 1em;
+/* Adiciona margem de 1em em todos os lados */
+    padding: 1em;
+/* Adiciona espaçamento interno de 1em */
+}
+
+.descrição__titulo {
+/* Estilo do título da descrição */
+    color: var(--laranja);
+/* Define a cor do título como laranja */
+    font-weight: 700;
+/* Define a espessura da fonte como negrito (700) */
+}
+
+.descrição__titulo-livro {
+/* Estilo do título do livro na descrição */
+    color: var(--azul);
+/* Define a cor do título como azul */
+    font-size: 18px;
+/* Define o tamanho da fonte como 18px */
+    font-weight: 700;
+/* Define a espessura da fonte como negrito (700) */
+    margin: 0.5em 0;
+/* Adiciona margem de 0.5em vertical e 0 horizontal */
+}
+
+.descrição__texto {
+/* Estilo do texto da descrição */
+    font-size: 14px;
+/* Define o tamanho da fonte como 14px */
+}
+
+.botões__item {
+/* Estilo dos itens dos botões */
+    margin: 0 0.5em;
+/* Adiciona margem de 0 vertical e 0.5em horizontal */
+}
+
+.botões__ancora {
+/* Estilo dos links dos botões */
+    background-color: var(--laranja);
+/* Define a cor de fundo como laranja */
+    padding: 1em 2.2em;
+/* Adiciona espaçamento interno de 1em vertical e 2.2em horizontal */
+    color: var(--branco);
+/* Define a cor do texto como branca */
+    font-weight: 700;
+/* Define a espessura da fonte como negrito (700) */
+    text-decoration: none;
+/* Remove a decoração do texto (sublinhado) */
+}
+
+@media screen and (min-width: 1024px) {
+/* Media query para telas com largura mínima de 1024px (desktop) */
+    .carrossel__titulo {
+    /* Estilo do título do carrossel no desktop */
+        font-size: 26px;
+    /* Define o tamanho da fonte como 26px */
+    }
+
+    .swiper-pagination {
+    /* Estilo da paginação do carrossel no desktop */
+        margin: 2em 0 3em 0;
+    /* Adiciona margem de 2em superior e 3em inferior */
+    }
+
+    .swiper {
+    /* Estilo do contêiner do carrossel no desktop */
+        width: 60%;
+    /* Define a largura como 60% do pai */
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+    /* Estilo dos botões de navegação do carrossel no desktop */
+        display: block;
+    /* Exibe os botões de navegação */
+        top: 60%;
+    /* Posiciona os botões a 60% da altura do pai */
+    }
+
+    .card {
+    /* Estilo do card no desktop */
+        width: 40%;
+    /* Define a largura como 40% do pai */
+        margin: 2em auto;
+    /* Adiciona margem de 2em vertical e auto horizontal */
+    }
+}
+
+@media screen and (min-width: 1728px) {
+/* Media query para telas com largura mínima de 1728px (desktop grande) */
+    .carrossel__container {
+    /* Estilo do contêiner do carrossel no desktop grande */
+        display: flex;
+    /* Exibe o contêiner como um flex container */
+        margin: 0 20vw 3em 20vw;
+    /* Adiciona margem de 0 vertical e 20vw horizontal, e 3em inferior */
+        align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    }
+
+    .swiper-pagination {
+    /* Estilo da paginação do carrossel no desktop grande */
+        margin: 1em 0;
+    /* Adiciona margem de 1em em todos os lados */
+    }
+
+    .swiper {
+    /* Estilo do contêiner do carrossel no desktop grande */
+        width: 50%;
+    /* Define a largura como 50% do pai */
+    }
+
+    .descrição__titulo {
+    /* Estilo do título da descrição no desktop grande */
+        font-size: 32px;
+    /* Define o tamanho da fonte como 32px */
+    }
+
+    .descrição__texto {
+    /* Estilo do texto da descrição no desktop grande */
+        font-size: 16px;
+    /* Define o tamanho da fonte como 16px */
+    }
+
+    .descrição {
+    /* Estilo da descrição no desktop grande */
+        margin-right: 2em;
+    /* Adiciona margem direita de 2em */
+    }
+
+    .card {
+    /* Estilo do card no desktop grande */
+        width: 60%;
+    /* Define a largura como 60% do pai */
+        margin-left: 3em;
+    /* Adiciona margem esquerda de 3em */
+    }
+
+}

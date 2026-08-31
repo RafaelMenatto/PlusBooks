@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+/* Reseta estilos padrão de todos os elementos HTML */
+    margin: 0;
+/* Remove a margem de todos os elementos */
+    padding: 0;
+/* Remove o preenchimento interno de todos os elementos */
+    border: 0;
+/* Remove a borda de todos os elementos */
+    font-size: 100%;
+/* Define o tamanho da fonte como 100% */
+    font: inherit;
+/* Permite que a fonte seja herdada do elemento pai */
+    vertical-align: baseline;
+/* Reseta o alinhamento vertical para a linha de base */
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+/* Reseta o display de elementos HTML5 para block */
+    display: block;
+/* Exibe os elementos como bloco */
+}
+
+body {
+/* Estilo do corpo da página */
+    line-height: 1;
+/* Reseta o line-height do corpo da página */
+}
+
+ol,
+ul {
+/* Reseta o estilo de lista de ol e ul */
+    list-style: none;
+/* Remove o estilo de lista (bolhas, números, etc.) */
+}
+
+blockquote,
+q {
+/* Reseta as citações de blockquote e q */
+    quotes: none;
+/* Remove as aspas das citações */
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+/* Reseta o conteúdo pseudo-elemento das citações */
+    content: '';
+/* Define o conteúdo como vazio */
+    content: none;
+/* Remove o conteúdo */
+}
+
+table {
+/* Reseta o comportamento de tabela */
+    border-collapse: collapse;
+/* Colapsa as bordas da tabela */
+    border-spacing: 0;
+/* Remove o espaçamento entre as células da tabela */
+}

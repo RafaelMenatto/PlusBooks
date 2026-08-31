@@ -1,0 +1,87 @@
+hr {
+/* Estilo da linha horizontal separadora */
+    margin: 0;
+/* Remove a margem da linha horizontal */
+}
+
+.rodapé {
+/* Estilo do rodapé */
+    background-color: var(--branco);
+/* Define a cor de fundo do rodapé como branca */
+    padding: 1em;
+/* Adiciona espaçamento interno de 1em */
+}
+
+.lista-rodapé {
+/* Estilo da lista do rodapé */
+    display: none;
+/* Esconde a lista do rodapé por padrão */
+}
+
+@media screen and (min-width: 1024px) {
+/* Media query para telas com largura mínima de 1024px (desktop) */
+    .rodapé {
+    /* Estilo do rodapé no desktop */
+        display: flex;
+    /* Exibe o rodapé como um flex container */
+        justify-content: space-around;
+    /* Distribui os itens do rodapé com espaço ao redor */
+    }
+
+    .lista-rodapé {
+    /* Estilo da lista do rodapé no desktop */
+        display: block;
+    /* Exibe a lista do rodapé como um bloco */
+    }
+
+    .lista-rodapé__item {
+    /* Estilo dos itens da lista do rodapé no desktop */
+        display: flex;
+    /* Exibe os itens como um flex container */
+        align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+        margin: 0.6em 0;
+    /* Adiciona margem de 0.6em vertical e 0 horizontal */
+    }
+
+    .lista-rodapé__link {
+    /* Estilo dos links da lista do rodapé no desktop */
+        color: var(--cinza);
+    /* Define a cor do texto como cinza */
+        text-decoration: none;
+    /* Remove a decoração do texto (sublinhado) */
+        margin-left: 0.6em;
+    /* Adiciona margem esquerda de 0.6em */
+    }
+
+    .lista-rodapé__titulo {
+    /* Estilo do título da lista do rodapé no desktop */
+        font-size: 14px;
+    /* Define o tamanho da fonte como 14px */
+        color: var(--cinza-claro);
+    /* Define a cor do texto como cinza clara */
+    }
+
+    .rodapé__titulo {
+    /* Estilo do título do rodapé no desktop */
+        font-size: 24px;
+    /* Define o tamanho da fonte como 24px */
+    }
+}
+
+@media screen and (min-width: 1728px) {
+/* Media query para telas com largura mínima de 1728px (desktop grande) */
+    .lista-rodapé {
+    /* Estilo da lista do rodapé no desktop grande */
+        border-left: 1px solid var(--cinza-claro);
+    /* Adiciona uma borda esquerda de 1px sólida cinza clara */
+        padding-left: 1em;
+    /* Adiciona espaçamento interno esquerdo de 1em */
+    }
+
+    .rodapé {
+    /* Estilo do rodapé no desktop grande */
+        padding: 3em 0;
+    /* Adiciona espaçamento interno de 3em vertical e 0 horizontal */
+    }
+}

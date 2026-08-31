@@ -1,0 +1,48 @@
+@import url("styles/header.css");
+/* Importa o arquivo CSS do cabeçalho */
+@import url("styles/banner.css");
+/* Importa o arquivo CSS do banner */
+@import url("styles/carrossel.css");
+/* Importa o arquivo CSS do carrossel */
+@import url("styles/topicos.css");
+/* Importa o arquivo CSS dos tópicos */
+@import url("styles/contato.css");
+/* Importa o arquivo CSS de contato */
+@import url("styles/rodapé.css");
+/* Importa o arquivo CSS do rodapé */
+
+:root {
+/* Define as variáveis globais do projeto */
+    --cor-de-fundo: #EBECEE;
+/* Define a cor de fundo principal do site */
+    --branco: #FFFFFF;
+/* Define a cor branca */
+    --laranja: #EB9B00;
+/* Define a cor laranja */
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+/* Define o gradiente azul usado em vários componentes */
+    --fonte-principal: "Poppins";
+/* Define a fonte principal do site */
+    --azul: #002F52;
+/* Define a cor azul escura */
+    --fonte-secundario: "Josefin Sans";
+/* Define a fonte secundária do site */
+    --preto: #000000;
+/* Define a cor preta */
+    --cinza: #474646;
+/* Define a cor cinza escura */
+    --cinza-claro: #858585;
+/* Define a cor cinza clara */
+}
+
+body {
+/* Estilo do corpo da página */
+    background-color: var(--cor-de-fundo);
+/* Define a cor de fundo do corpo */
+    font-family: var(--fonte-principal);
+/* Define a fonte principal do site */
+    font-size: 16px;
+/* Define o tamanho da fonte como 16px */
+    font-weight: 400;
+/* Define a espessura da fonte como normal (400) */
+}

@@ -1,0 +1,103 @@
+.banner {
+/* Estilo do banner principal */
+    background: var(--azul-degrade);
+/* Aplica o gradiente azul no fundo do banner */
+    color: var(--branco);
+/* Define a cor do texto como branca */
+    text-align: center;
+/* Centraliza o texto dentro do banner */
+    padding: 2.5em 2em;
+/* Adiciona espaçamento interno de 2.5em vertical e 2em horizontal */
+}
+
+.banner__titulo {
+/* Estilo do título do banner */
+    font-size: 18px;
+/* Define o tamanho da fonte como 18px */
+    font-weight: 700;
+/* Define a espessura da fonte como negrito (700) */
+}
+
+.banner__texto {
+/* Estilo do texto do banner */
+    font-weight: 500;
+/* Define a espessura da fonte como média (500) */
+    margin: 1em 0;
+/* Adiciona margem de 1em vertical e 0 horizontal */
+}
+
+.banner__pesquisa {
+/* Estilo do campo de pesquisa do banner */
+    background-color: transparent;
+/* Define o fundo como transparente */
+    border: 1px solid var(--branco);
+/* Adiciona uma borda de 1px sólida branca */
+    color: var(--branco);
+/* Define a cor do texto digitado como branca */
+    border-radius: 24px;
+/* Arredonda os cantos do campo com 24px */
+    padding: 1em;
+/* Adiciona espaçamento interno de 1em */
+    width: 100%;
+/* Define a largura do campo como 100% do pai */
+}
+
+.banner__pesquisa::placeholder {
+/* Estilo do placeholder do campo de pesquisa */
+    font-family: var(--fonte-principal);
+/* Define a fonte principal do site */
+    font-size: 14px;
+/* Define o tamanho da fonte como 14px */
+    font-weight: 400;
+/* Define a espessura da fonte como normal (400) */
+    text-align: center;
+/* Centraliza o texto do placeholder */
+    color: var(--branco);
+/* Define a cor do placeholder como branca */
+    background: url("../img/Lupa.svg") no-repeat;
+/* Adiciona um ícone de lupa como fundo do placeholder */
+    background-position: 1em;
+/* Posiciona o ícone a 1em da esquerda */
+}
+
+@media screen and (min-width: 1024px) {
+/* Media query para telas com largura mínima de 1024px (desktop) */
+    .banner__titulo {
+    /* Estilo do título do banner no desktop */
+        font-size: 36px;
+    /* Define o tamanho da fonte como 36px */
+    }
+
+    .banner__pesquisa {
+    /* Estilo do campo de pesquisa no desktop */
+        width: 50%;
+    /* Define a largura como 50% do pai */
+    }
+
+    .banner__pesquisa::placeholder {
+    /* Estilo do placeholder do campo de pesquisa no desktop */
+        background-position: 7em;
+    /* Posiciona o ícone a 7em da esquerda */
+    }
+}
+
+@media screen and (min-width: 1728px) {
+/* Media query para telas com largura mínima de 1728px (desktop grande) */
+    .banner__pesquisa {
+    /* Estilo do campo de pesquisa no desktop grande */
+        width: 35%;
+    /* Define a largura como 35% do pai */
+    }
+
+    .banner__pesquisa::placeholder {
+    /* Estilo do placeholder do campo de pesquisa no desktop grande */
+        background-position: 12em;
+    /* Posiciona o ícone a 12em da esquerda */
+    }
+
+    .banner {
+    /* Estilo do banner no desktop grande */
+        padding: 6em 0;
+    /* Adiciona espaçamento interno de 6em vertical e 0 horizontal */
+    }
+}

@@ -1,0 +1,75 @@
+.tópicos {
+/* Estilo da seção de tópicos */
+    background: var(--azul-degrade);
+/* Aplica o gradiente azul no fundo da seção */
+    text-align: center;
+/* Centraliza o texto dentro da seção */
+    padding: 1em 0;
+/* Adiciona espaçamento interno de 1em vertical e 0 horizontal */
+}
+
+.tópicos__titulo {
+/* Estilo do título da seção de tópicos */
+    color: var(--branco);
+/* Define a cor do texto como branca */
+    font-weight: 300;
+/* Define a espessura da fonte como leve (300) */
+    margin-bottom: 1em;
+/* Adiciona margem inferior de 1em */
+}
+
+.tópicos__lista {
+/* Estilo da lista de tópicos */
+    display: flex;
+/* Exibe a lista como um flex container */
+    flex-wrap: wrap;
+/* Permite que os itens da lista quebrem linha */
+    justify-content: center;
+/* Centraliza os itens da lista horizontalmente */
+}
+
+.tópicos__item {
+/* Estilo dos itens da lista de tópicos */
+    margin: 2em 0.5em;
+/* Adiciona margem de 2em vertical e 0.5em horizontal */
+}
+
+.tópicos__link {
+/* Estilo dos links da lista de tópicos */
+    color: var(--branco);
+/* Define a cor do texto como branca */
+    padding: 1em;
+/* Adiciona espaçamento interno de 1em */
+    background-color: var(--laranja);
+/* Define a cor de fundo como laranja */
+    text-decoration: none;
+/* Remove a decoração do texto (sublinhado) */
+    font-size: 14px;
+/* Define o tamanho da fonte como 14px */
+    font-weight: 700;
+/* Define a espessura da fonte como negrito (700) */
+}
+
+@media screen and (min-width: 1024px) {
+/* Media query para telas com largura mínima de 1024px (desktop) */
+    .tópicos__titulo {
+    /* Estilo do título da seção de tópicos no desktop */
+        font-size: 24px;
+    /* Define o tamanho da fonte como 24px */
+    }
+
+    .tópicos__link {
+    /* Estilo dos links da lista de tópicos no desktop */
+        font-size: 24px;
+    /* Define o tamanho da fonte como 24px */
+    }
+}
+
+@media screen and (min-width: 1728px) {
+/* Media query para telas com largura mínima de 1728px (desktop grande) */
+    .tópicos {
+    /* Estilo da seção de tópicos no desktop grande */
+        padding: 3em 30vw;
+    /* Adiciona espaçamento interno de 3em vertical e 30vw horizontal */
+    }
+}

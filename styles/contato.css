@@ -1,0 +1,104 @@
+.contato {
+/* Estilo da seção de contato */
+    background-color: var(--branco);
+/* Define a cor de fundo como branca */
+    padding: 1em;
+/* Adiciona espaçamento interno de 1em */
+}
+
+.contato__titulo,
+.contato__texto {
+/* Estilo do título e texto da seção de contato */
+    background: var(--azul-degrade);
+/* Aplica o gradiente azul no fundo do texto */
+    -webkit-background-clip: text;
+/* Recorta o fundo gradiente para o texto (compatibilidade com WebKit) */
+    -webkit-text-fill-color: transparent;
+/* Torna o preenchimento do texto transparente para mostrar o gradiente */
+    background-clip: text;
+/* Recorta o fundo gradiente para o texto (padrão) */
+}
+
+.contato__titulo {
+/* Estilo do título da seção de contato */
+    font-size: 18px;
+/* Define o tamanho da fonte como 18px */
+    font-weight: 500;
+/* Define a espessura da fonte como média (500) */
+}
+
+.contato__texto {
+/* Estilo do texto da seção de contato */
+    font-weight: 300;
+/* Define a espessura da fonte como leve (300) */
+    margin: 1em 0;
+/* Adiciona margem de 1em vertical e 0 horizontal */
+}
+
+.contato__email {
+/* Estilo do campo de e-mail */
+    padding: 1em;
+/* Adiciona espaçamento interno de 1em */
+    border: 1px solid var(--azul);
+/* Adiciona uma borda de 1px sólida azul */
+    border-radius: 24px;
+/* Arredonda os cantos do campo com 24px */
+    width: 90%;
+/* Define a largura do campo como 90% do pai */
+    color: var(--azul);
+/* Define a cor do texto digitado como azul */
+}
+
+.contato__email::placeholder {
+/* Estilo do placeholder do campo de e-mail */
+    font-family: var(--fonte-principal);
+/* Define a fonte principal do site */
+    color: var(--azul);
+/* Define a cor do placeholder como azul */
+    background: url("../img/Email.svg") no-repeat;
+/* Adiciona um ícone de e-mail como fundo do placeholder */
+    padding-left: 2em;
+/* Adiciona espaçamento interno esquerdo de 2em */
+}
+
+@media screen and (min-width: 1024px) {
+/* Media query para telas com largura mínima de 1024px (desktop) */
+    .contato {
+    /* Estilo da seção de contato no desktop */
+        display: flex;
+    /* Exibe a seção como um flex container */
+        justify-content: center;
+    /* Centraliza os itens horizontalmente */
+        align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    }
+
+    .contato__titulo {
+    /* Estilo do título da seção de contato no desktop */
+        font-size: 24px;
+    /* Define o tamanho da fonte como 24px */
+    }
+
+    .contato__descrição {
+    /* Estilo da descrição da seção de contato no desktop */
+        margin-right: 1em;
+    /* Adiciona margem direita de 1em */
+        width: 30%;
+    /* Define a largura como 30% do pai */
+    }
+
+    .contato__email {
+    /* Estilo do campo de e-mail no desktop */
+        width: 30%;
+    /* Define a largura como 30% do pai */
+    }
+}
+
+@media screen and (min-width: 1728px) {
+/* Media query para telas com largura mínima de 1728px (desktop grande) */
+    .contato {
+    /* Estilo da seção de contato no desktop grande */
+        padding: 3em 20vw;
+    /* Adiciona espaçamento interno de 3em vertical e 20vw horizontal */
+    }
+}
